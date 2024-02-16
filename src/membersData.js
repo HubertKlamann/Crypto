@@ -1,0 +1,43 @@
+export const membersData = [
+  {
+    id: 1,
+    fullName: 'Hubert Wiktor',
+    imgSrc: './images/picture1.jpg',
+    position: 'Lead Software Developer',
+    facebook: 'www.facebook.com',
+    twitter: 'www.twitter.com',
+    instagram: 'www.instagram.com',
+    linkedin: 'www.linkedin.com',
+  },
+  {
+    id: 2,
+    fullName: 'Kamil Majcherczak',
+    imgSrc: './images/picture2.jpg',
+    position: 'Founder & CEO',
+    facebook: 'www.facebook.com',
+    twitter: 'www.twitter.com',
+    instagram: 'www.instagram.com',
+    linkedin: 'www.linkedin.com',
+  },
+  {
+    id: 3,
+
+    fullName: 'Hubert Klamann',
+    imgSrc: './images/picture3.jpg',
+    position: 'Developer',
+    facebook: 'www.facebook.com',
+    twitter: 'www.twitter.com',
+    instagram: 'www.instagram.com',
+    linkedin: 'www.linkedin.com',
+  },
+  {
+    id: 4,
+    fullName: 'Emil Owczarek',
+    imgSrc: './images/picture4.jpeg',
+    position: 'Chief Operation Officer',
+    facebook: 'www.facebook.com',
+    twitter: 'www.twitter.com',
+    instagram: 'www.instagram.com',
+    linkedin: 'www.linkedin.com',
+  },
+];

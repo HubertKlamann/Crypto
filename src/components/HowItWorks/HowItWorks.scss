@@ -1,0 +1,426 @@
+@use '../../../src/sass/abstracts/' as *;
+
+.section {
+  @include for-tablet() {
+    padding-bottom: 60px;
+  }
+
+  @include for-phone() {
+    padding-bottom: 60px;
+  }
+}
+
+.box {
+  position: relative;
+  width: 370px;
+  height: 150px;
+  border: solid 3px #000;
+  border-color: rgb(0, 125, 241) transparent transparent transparent;
+  border-radius: 50%/100px 100px 0 0;
+  transform: rotateX(180deg);
+  margin-top: 20px;
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+}
+
+.box:after {
+  content: '';
+  width: 450px;
+  position: absolute;
+  height: 486px;
+  border: solid 3px #000;
+  border-color: rgb(0, 125, 241) transparent transparent transparent;
+  border-radius: 50%;
+  transform: rotate(170deg);
+  left: 228px;
+  bottom: 69px;
+}
+
+.box:before {
+  content: '';
+  width: 450px;
+  position: absolute;
+  height: 486px;
+  border: solid 3px #000;
+  border-color: rgb(0, 125, 241) transparent transparent transparent;
+  border-radius: 50%;
+  transform: rotate(190deg);
+  right: 228px;
+  bottom: 69px;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  top: 182px;
+  right: -278px;
+  border-left: 20px solid rgb(0, 125, 241);
+  transform: rotate(50deg);
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+}
+
+.whole-shape {
+  position: relative;
+  margin-top: 80px;
+
+  @include for-tablet() {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 40px;
+  }
+
+  @include for-phone() {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 40px;
+  }
+}
+
+.circle1 {
+  background: rgb(17, 37, 173);
+  background: linear-gradient(100deg,
+      rgba(17, 37, 173, 1) 0%,
+      rgba(28, 126, 242, 1) 100%);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  left: -272px;
+  bottom: -19px;
+  box-shadow: 0px 0px 8px 3px rgb(56, 80, 219);
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+}
+
+.circle2 {
+  background: rgb(17, 37, 173);
+  background: linear-gradient(350deg,
+      rgba(17, 37, 173, 1) 0%,
+      rgba(28, 126, 242, 1) 76%);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  left: -103px;
+  bottom: 72px;
+  box-shadow: 0px 0px 8px 3px rgb(16, 133, 228);
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+}
+
+.circle3 {
+  background: rgb(0, 122, 253);
+  background: linear-gradient(100deg,
+      rgba(0, 122, 253, 1) 0%,
+      rgba(16, 209, 233, 1) 100%);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  right: 175px;
+  bottom: -10px;
+
+  box-shadow: 0px 0px 8px 3px rgb(106, 195, 255);
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+}
+
+.circle4 {
+  background: rgb(87, 0, 253);
+  background: linear-gradient(circle,
+      rgba(87, 0, 253, 1) 0%,
+      rgba(55, 110, 236, 1) 100%);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  right: -110px;
+  bottom: 72px;
+
+  box-shadow: 0px 0px 8px 3px rgb(101, 42, 156);
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+}
+
+.bubble1 {
+  position: absolute;
+  background: rgb(17, 37, 173);
+  background: linear-gradient(100deg,
+      rgba(17, 37, 173, 1) 0%,
+      rgba(28, 126, 242, 1) 100%);
+  width: 100px;
+  height: 100px;
+  left: -146px;
+  top: -50px;
+  border-radius: 31% 69% 76% 24% / 74% 58% 42% 26%;
+  animation: bubbleAnimation 10s linear infinite;
+  rotate: -90deg;
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+
+  .icon1 {
+    width: 50px;
+    height: 50px;
+    background-image: url('./person.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    rotate: 90deg;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.bubble2 {
+  position: absolute;
+  background: rgb(87, 0, 253);
+  background: linear-gradient(100deg,
+      rgba(87, 0, 253, 1) 0%,
+      rgba(55, 110, 236, 1) 100%);
+  width: 100px;
+  height: 100px;
+  border-radius: 31% 69% 76% 24% / 74% 58% 42% 26%;
+  animation: bubbleAnimation2 10s linear infinite;
+  right: -146px;
+  top: -50px;
+  rotate: -90deg;
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+
+  .icon2 {
+    width: 50px;
+    height: 50px;
+    background-image: url('./bitcoin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    rotate: 90deg;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.bubble3 {
+  position: absolute;
+  rotate: -90deg;
+  background: rgb(0, 122, 253);
+  background: linear-gradient(100deg,
+      rgba(0, 122, 253, 1) 0%,
+      rgba(16, 209, 233, 1) 100%);
+  background-color: rgb(43, 116, 226);
+  width: 100px;
+  height: 100px;
+  border-radius: 31% 69% 76% 24% / 74% 58% 42% 26%;
+  animation: bubbleAnimation3 10s linear infinite;
+  bottom: -146px;
+  right: 138px;
+
+  @include for-tablet() {
+    display: none;
+  }
+
+  @include for-phone() {
+    display: none;
+  }
+
+  .icon3 {
+    width: 50px;
+    height: 50px;
+    background-image: url('./wallet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    rotate: 90deg;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    border-radius: 31% 69% 76% 24% / 74% 58% 42% 26%;
+  }
+
+  50% {
+    border-radius: 81% 19% 42% 58% / 22% 58% 42% 78%;
+  }
+
+  100% {
+    border-radius: 31% 69% 76% 24% / 74% 58% 42% 26%;
+  }
+}
+
+@keyframes bubbleAnimation2 {
+  0% {
+    border-radius: 81% 19% 42% 58% / 22% 58% 42% 78%;
+  }
+
+  50% {
+    border-radius: 31% 69% 76% 24% / 74% 58% 42% 26%;
+  }
+
+  100% {
+    border-radius: 31% 19% 76% 24% / 74% 28% 42% 26%;
+  }
+}
+
+@keyframes bubbleAnimation3 {
+  0% {
+    border-radius: 31% 69% 76% 24% / 74% 58% 42% 26%;
+  }
+
+  50% {
+    border-radius: 81% 19% 42% 58% / 22% 58% 42% 78%;
+  }
+
+  100% {
+    border-radius: 31% 69% 76% 24% / 74% 58% 42% 26%;
+  }
+}
+
+.title1 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #1a5df8;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.description1 {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #8b93ae;
+  text-align: center;
+}
+
+.title-description1 {
+  left: -220px;
+  top: 130px;
+  position: absolute;
+  width: 250px;
+
+  @include for-tablet() {
+    position: static;
+  }
+
+  @include for-phone() {
+    position: static;
+  }
+}
+
+.title2 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #07adf8;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.description2 {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #8b93ae;
+  text-align: center;
+}
+
+.title-description2 {
+  left: 70px;
+  top: 70px;
+  position: absolute;
+  width: 250px;
+
+  @include for-tablet() {
+    position: static;
+  }
+
+  @include for-phone() {
+    position: static;
+  }
+}
+
+.title3 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #6243fa;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.description3 {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #8b93ae;
+  text-align: center;
+}
+
+.title-description3 {
+  left: 350px;
+  top: 130px;
+  position: absolute;
+  width: 250px;
+
+  @include for-tablet() {
+    position: static;
+  }
+
+  @include for-phone() {
+    position: static;
+  }
+}

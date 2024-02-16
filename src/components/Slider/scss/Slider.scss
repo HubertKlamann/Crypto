@@ -1,0 +1,49 @@
+@use '../../../sass/abstracts/index.scss';
+
+.container {
+    margin-top: 150px !important;
+    color: white;
+    font-family: index.$font-family;
+    width: 80%;
+    margin: auto;
+    & > h2 {
+        font-size: 42px;
+        font-weight: index.$font-weight-medium;
+
+        & > span { 
+            color: index.$color-highlight;
+        }
+    }
+
+    & > p {
+        text-align: center;
+        margin-top: 40px !important;
+        opacity: 0.6;
+        line-height: 25px;
+        margin: auto;
+        
+    }
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    & > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        height: fit-content;
+    }
+
+    & .swiper {
+        width: 80%;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        &__slide {
+            display: flex !important;
+            justify-content: center;
+            width: 180px;
+        }
+    }
+}
+

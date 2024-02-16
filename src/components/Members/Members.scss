@@ -1,0 +1,15 @@
+@use '../../sass/abstracts/' as *;
+
+.members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include for-tablet() {
+    padding: 0 135px;
+  }
+
+  @include for-phone() {
+    padding: 0 50px;
+  }
+}

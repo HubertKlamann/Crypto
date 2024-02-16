@@ -1,0 +1,81 @@
+@use '../../../sass/abstracts/index.scss';
+
+.card {
+    height: 250px;
+    width: 240px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(18,38,86,255);
+    border-radius: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    & > h3 {
+        margin-left: 15px;
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: index.$font-weight-bold;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__price {
+        margin-left: 10px;
+        font-weight: index.$font-weight-bold;
+        margin-top: 20px;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+        & > span {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+    &__change {
+
+        margin-left: 10px;
+        font-weight: index.$font-weight-bold;
+        margin-top: 10px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & > span {
+            padding: 4px;
+            border-radius: 7px;
+        }
+
+        & > p {
+            opacity: 0.6;
+        }
+    }
+}
+
+.chart {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.red {
+    color: red;
+}
+
+.bggreen {
+    background-color: green;
+}
+
+.bgred {
+    background-color: red;
+}
