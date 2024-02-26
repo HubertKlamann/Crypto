@@ -1,5 +1,3 @@
-import { ChartData } from '../../types/ChartData';
-import PropTypes from 'prop-types';
 import LineChart from '../LineChart/LineChart';
 import './scss/CryptoCard.scss';
 import ripple from './ripple.png';

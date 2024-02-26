@@ -54,7 +54,7 @@ export const Slider: React.FC = () => {
         });
         setCurrencies(currenciesData);
       } catch (error) {
-        console.error('Error:', error);
+        throw new Error('Error');
       }
     };
 
