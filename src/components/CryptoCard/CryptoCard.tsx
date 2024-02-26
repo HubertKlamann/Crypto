@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { ChartData } from '../../types/ChartData';
+import PropTypes from 'prop-types';
 import LineChart from '../LineChart/LineChart';
 import './scss/CryptoCard.scss';
 import ripple from './ripple.png';
@@ -23,7 +23,7 @@ type Props = {
   marketCaps: [number, number][];
 };
 
-export const CryptoCard: React.FC<Props> = ({ currency, marketCaps }) => {
+export const CryptoCard = ({ currency, marketCaps }: Props) => {
   const value = marketCaps[marketCaps.length - 1][1];
   const difference = marketCaps[marketCaps.length - 1][1] - marketCaps[0][1];
   const differencePercent =

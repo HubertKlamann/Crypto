@@ -109,7 +109,7 @@ export const Slider: React.FC = () => {
       </p>
 
       <div className="slider">
-        <button onClick={() => swiper && swiper.slidePrev()}>
+        <button title="button" onClick={() => swiper && swiper.slidePrev()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height={40}
@@ -139,7 +139,7 @@ export const Slider: React.FC = () => {
               );
             })}
         </Swiper>
-        <button onClick={() => swiper && swiper.slideNext()}>
+        <button title="button" onClick={() => swiper && swiper.slideNext()}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height={40}
