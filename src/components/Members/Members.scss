@@ -1,9 +1,14 @@
 @use '../../sass/abstracts/' as *;
 
+.section {
+  margin-top: 100px !important;
+}
+
 .members {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 40px;
 
   @include for-tablet() {
     padding: 0 135px;

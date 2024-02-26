@@ -6,10 +6,12 @@
   color: $color-text-primary;
   background: $color-button-gradient;
   border-radius: 20px;
-  padding: 12px 35px;
+  padding: 12px 25px;
   border: 1px solid $color-primary;
   cursor: pointer;
   font-weight: 600;
+  transition: background-color 0.3s ease;
+
   &:hover {
     background: $color-highlight;
     border: 1px solid $color-highlight;

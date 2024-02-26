@@ -3,7 +3,7 @@ import './services.scss';
 export function Services() {
   return (
     <div className="services">
-      <h2 className="section_title">Our Services</h2>
+      <h2 className="section__title">Our Services</h2>
       <h3 className="section_description">
         Explore our range of cryptocurrency services and take advantage of the
         benefits of the digital currency revolution

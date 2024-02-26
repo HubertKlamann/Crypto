@@ -4,6 +4,38 @@ $bar-gap: 4px;
 $bar-height: 5px;
 $X-width: calc((#{$bar-height} * 3 + #{$bar-gap} * 2) * 1.414);
 
+
+.header__logo {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  
+  &--icon {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url('./../../../public/icons/logo.png');
+  background-size: cover;
+  margin-right: 10px;
+  }
+
+  &--title {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+
+    @include for-tablet() {
+      display: none;
+    }
+  }
+
+  @include for-tablet() {
+    display: none;
+  }
+
+}
+
+
 .navigation {
   display: flex;
   align-items: center;
@@ -14,9 +46,15 @@ $X-width: calc((#{$bar-height} * 3 + #{$bar-gap} * 2) * 1.414);
   font-size: $font-size-medium;
   color: $color-text-primary;
 
-  margin: 0 auto 0 auto;
+  @media (min-width: 993px) {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 10px;
+  }
 
   @include for-tablet() {
+    background-color: #07173F;
     position: absolute;
     left: 0;
     right: 0;
@@ -38,7 +76,7 @@ $X-width: calc((#{$bar-height} * 3 + #{$bar-gap} * 2) * 1.414);
   &__list {
     display: flex;
     flex-direction: row;
-    gap: 1.3em;
+    gap: 2em;
 
     @include for-tablet() {
       flex-direction: column;

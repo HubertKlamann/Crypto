@@ -30,19 +30,19 @@ const Member = ({
       <h3 className="member__name">{fullName}</h3>
       <p className="member__description">{position}</p>
       <div className="member__icons">
-        <a href={facebook}>
+        <a href={facebook} target="_blank" rel="noreferrer">
           <div className="member__icon member__icon--facebook" />
         </a>
 
-        <a href={twitter}>
+        <a href={twitter} target="_blank" rel="noreferrer">
           <div className="member__icon member__icon--twitter" />
         </a>
 
-        <a href={instagram}>
+        <a href={instagram} target="_blank" rel="noreferrer">
           <div className="member__icon member__icon--instagram" />
         </a>
 
-        <a href={linkedin}>
+        <a href={linkedin} target="_blank" rel="noreferrer">
           <div className="member__icon member__icon--linkedin" />
         </a>
       </div>

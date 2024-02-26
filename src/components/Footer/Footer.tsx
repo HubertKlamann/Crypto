@@ -5,42 +5,41 @@ export function Footer() {
     <div className="footer">
       <div className="footer__box">
         <div className="footer__articles--main">
-          <h4>EONCOIN</h4>
+          <div className="footer__title">
+            <div className="footer__logo"></div>
+            <h4>EONCOIN</h4>
+          </div>
+
           <p>
             Cryptocurrencies. A new way to make
             <br />
             the payment easy reliable and 100% secure.
           </p>
-          <ul>
-            <li>
-              <button
-                type="button"
-                title="Facebook"
-                className="social__media--facebook"
-              ></button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="Twitter"
-                className="social__media--twitter"
-              ></button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="Instagram"
-                className="social__media--instagram"
-              ></button>
-            </li>
-            <li>
-              <button
-                type="button"
-                title="Linkedin"
-                className="social__media--linkedin"
-              ></button>
-            </li>
-          </ul>
+          <div className="footer__icons">
+            <a href="www.facebook.com" target="_blank" rel="noreferrer">
+              <div className="footer__icon--wrapper">
+                <div className="footer__icon footer__icon--facebook" />
+              </div>
+            </a>
+
+            <a href="www.facebook.com" target="_blank" rel="noreferrer">
+              <div className="footer__icon--wrapper">
+                <div className="footer__icon footer__icon--twitter" />
+              </div>
+            </a>
+
+            <a href="www.facebook.com" target="_blank" rel="noreferrer">
+              <div className="footer__icon--wrapper">
+                <div className="footer__icon footer__icon--instagram" />
+              </div>
+            </a>
+
+            <a href="www.facebook.com" target="_blank" rel="noreferrer">
+              <div className="footer__icon--wrapper">
+                <div className="footer__icon footer__icon--linkedin" />
+              </div>
+            </a>
+          </div>
         </div>
         <div className="footer__articles">
           <div className="footer__article">

@@ -94,7 +94,7 @@ export const Slider: React.FC = () => {
   }, [swiper]);
 
   return (
-    <section className="container">
+    <section className="slider__container">
       <h2>
         Real time popular <span>Cryptocurrency</span>
       </h2>

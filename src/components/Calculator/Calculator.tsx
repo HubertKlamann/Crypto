@@ -89,7 +89,7 @@ export function Calculator() {
 
   return (
     <div className="calculator">
-      <h2 className="section_title">Cryptocurrency Calculator</h2>
+      <h2 className="section__title">Cryptocurrency Calculator</h2>
 
       <div className="calc_selectors">
         <div className="calc_selectors--item">

@@ -34,6 +34,11 @@ export const Header = () => {
           'navigation--visible': isChecked,
         })}
       >
+        <div className="header__logo">
+          <div className="header__logo--icon"></div>
+          <p className="header__logo--title">EONCOIN</p>
+        </div>
+
         <ul className="navigation__list">
           <li className="navigation__list-item">
             <a className="navigation__link" href="#">
